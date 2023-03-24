@@ -1,0 +1,6 @@
+-
+  type: div
+  attribute:
+    class: accordion
+    id: data:id
+  innerHTML: rs:items

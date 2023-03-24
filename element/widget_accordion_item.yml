@@ -1,0 +1,33 @@
+type: div
+attribute:
+  class: accordion-item
+innerHTML:
+  -
+    type: h2
+    attribute:
+      class: accordion-header
+      id: rs:id_heading
+    innerHTML:
+      -
+        type: button
+        attribute:
+          class: rs:button_class
+          type: button
+          data-bs-toggle: collapse
+          data-bs-target: rs:_id_collapse
+          aria-expanded: 'false'
+          aria-controls: rs:id_collapse
+        innerHTML: rs:header
+  -
+    type: div
+    attribute:
+      id: rs:id_collapse
+      class: rs:collapse_class
+      aria-labelledby: rs:id_heading
+      data-bs-parent: rs:_id
+    innerHTML:
+      -
+        type: div
+        attribute:
+          class: accordion-body
+        innerHTML: rs:body
